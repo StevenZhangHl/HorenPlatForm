@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl_time"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:paddingLeft="@dimen/margin_15">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/service_tv15_color_333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="预计使用时间" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/service_tv12_color_666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提前7天享受租箱" />
+
+            <TextView
+                android:id="@+id/tv_discount"
+                style="@style/service_tv12_color_666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7.5"
+                android:textColor="#F15B02" />
+
+            <TextView
+                style="@style/service_tv12_color_666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="折优惠" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_order_create_time"
+        style="@style/service_tv13_color_333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="33dp"
+        tools:text="2018-10-16" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="@dimen/margin_5"
+        android:padding="@dimen/dp_10"
+        android:src="@drawable/icon_arrow_right" />
+</FrameLayout>

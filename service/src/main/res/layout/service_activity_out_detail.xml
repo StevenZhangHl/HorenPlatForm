@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f5"
+    android:fitsSystemWindows="true"
+    android:overScrollMode="never">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+        <!--From To 地址-->
+        <include layout="@layout/service_include_order_address" />
+        <!--订单信息-->
+        <include layout="@layout/service_include_out_order_info" />
+
+        <View style="@style/service_diver_10" />
+        <!--备注-->
+        <include layout="@layout/service_include_remake" />
+        <!--订单物品-->
+        <include layout="@layout/service_include_out_order_goods" />
+        <!--图片选择-->
+        <include layout="@layout/service_include_photo_picker" />
+    </LinearLayout>
+
+</ScrollView>

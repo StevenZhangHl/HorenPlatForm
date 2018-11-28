@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ResourceName">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/customer_detail_bg"
+        android:orientation="vertical"
+        android:paddingTop="75dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:text="@string/base_info"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_14" />
+
+            <TextView
+                android:id="@+id/tv_edit_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_15"
+                android:drawableLeft="@mipmap/icon_white_edit"
+                android:drawablePadding="@dimen/margin_10"
+                android:paddingLeft="@dimen/dp_10"
+                android:text="@string/edit_info"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_14" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginTop="@dimen/margin_20">
+
+            <TextView
+                android:id="@+id/tv_customer_inductry_txt"
+                style="@style/textview_white_sencond_title"
+                android:text="@string/industry" />
+
+            <TextView
+                android:id="@+id/tv_customer_inductry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_30"
+                android:layout_toRightOf="@+id/tv_customer_inductry_txt"
+                android:text=""
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_15">
+
+            <TextView
+                android:id="@+id/tv_customer_name_txt"
+                style="@style/textview_white_sencond_title"
+                android:text="@string/company_name" />
+
+            <TextView
+                android:id="@+id/tv_customer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_30"
+                android:layout_toRightOf="@+id/tv_customer_name_txt"
+                android:text=""
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_15">
+
+            <TextView
+                android:id="@+id/tv_customer_address_txt"
+                style="@style/textview_white_sencond_title"
+                android:text="@string/company_address" />
+
+            <TextView
+                android:id="@+id/tv_customer_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_30"
+                android:layout_toRightOf="@+id/tv_customer_address_txt"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_15">
+
+            <TextView
+                android:id="@+id/tv_contanct__txt"
+                style="@style/textview_white_sencond_title"
+                android:text="@string/contanct" />
+
+            <TextView
+                android:id="@+id/tv_contanct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_30"
+                android:layout_toRightOf="@+id/tv_contanct__txt"
+                android:text=""
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_15">
+
+            <TextView
+                android:id="@+id/tv_customer_email_txt"
+                style="@style/textview_white_sencond_title"
+                android:text="@string/email" />
+
+            <TextView
+                android:id="@+id/tv_customer_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_30"
+                android:layout_toRightOf="@+id/tv_customer_email_txt"
+                android:text=""
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_15">
+
+            <TextView
+                android:id="@+id/tv_customer_tel_txt"
+                style="@style/textview_white_sencond_title"
+                android:text="@string/tel" />
+
+            <TextView
+                android:id="@+id/tv_customer_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_30"
+                android:layout_toRightOf="@+id/tv_customer_tel_txt"
+                android:text=""
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

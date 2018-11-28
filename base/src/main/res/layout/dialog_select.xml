@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View style="@style/service_diver_f1" />
+
+    <com.horen.base.widget.flowlayout.FlowTagLayout
+        android:id="@+id/flow_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"></com.horen.base.widget.flowlayout.FlowTagLayout>
+
+    <View
+        android:id="@+id/view_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#8f000000" />
+</LinearLayout>

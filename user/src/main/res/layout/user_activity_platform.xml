@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context="com.horen.user.ui.activity.PlatformActivity">
+
+        <com.horen.base.widget.HRToolbar
+            android:id="@+id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:bg_color="@color/white"
+            app:is_white="true"
+            app:title="@string/user_app_title"
+            app:title_elevation="1" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/user_ic_main" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:text="请选择您要进入的模式"
+            android:textColor="@color/base_text_color_light"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="@dimen/margin_30"
+        android:layout_marginRight="@dimen/margin_30"
+        android:orientation="vertical">
+
+        <com.allen.library.SuperButton
+            android:id="@+id/sbt_partner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:onClick="partner"
+            android:text="@string/user_entering_sales_business"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_14"
+            app:sCornersRadius="6dp"
+            app:sGradientEndColor="@color/base_text_color_light"
+            app:sGradientOrientation="LEFT_RIGHT"
+            app:sGradientStartColor="@color/color_main" />
+
+        <com.allen.library.SuperButton
+            android:id="@+id/sbt_service"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="13dp"
+            android:onClick="service"
+            android:text="@string/user_enter_service"
+            android:textColor="@color/base_text_color_light"
+            android:textSize="@dimen/textSize_14"
+            app:sCornersRadius="6dp"
+            app:sSolidColor="@color/white"
+            app:sStrokeColor="@color/base_text_color_light"
+            app:sStrokeWidth="1dp" />
+
+    </LinearLayout>
+</FrameLayout>

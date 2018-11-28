@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+
+def config = rootProject.ext.android // 配置
+
+android {
+    compileSdkVersion config.compileSdkVersion
+
+    defaultConfig {
+        applicationId "com.horen.cortp"
+        minSdkVersion config.minSdkVersion
+        targetSdkVersion config.targetSdkVersion
+        versionCode config.versionCode
+        versionName config.versionName
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: "com.horen.cortp",
+                JPUSH_APPKEY : "d602a2aae200793ba369e73f", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default", //用户渠道统计的渠道名称
+        ]
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file("$rootDir/cortpKeystore.jks")
+            storePassword "123456"
+            keyAlias "horen"
+            keyPassword "123456"
+        }
+
+        release {
+            storeFile file("$rootDir/cortpKeystore.jks")
+            storePassword "123456"
+            keyAlias "horen"
+            keyPassword "123456"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    annotationProcessor "com.alibaba:arouter-compiler:$aroutercompiler"
+    implementation project(':service')
+    implementation project(':partner')
+    implementation project(':user')
+    implementation project(':company')
+
+    // 极光推送
+    implementation 'cn.jiguang.sdk:jpush:3.0.6'
+    implementation 'cn.jiguang.sdk:jcore:1.1.3'
+}

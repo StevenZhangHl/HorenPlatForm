@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_f5"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_normal_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@drawable/service_shape_f1_bg"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="@color/service_color_6FB" />
+
+        <TextView
+            style="@style/service_tv13_color_333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:text="损坏位置:" />
+
+        <TextView
+            android:id="@+id/tv_normal_location"
+            style="@style/service_tv13_color_333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_15"
+            android:layout_marginTop="12dp"
+            tools:text="XXXXXX；XXXXXX；XXXXXXsdf sdfs撒地方撒地方撒地方是的发送的发送的发送的是" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_refuse_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@drawable/service_shape_f1_bg"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="@color/service_color_F15" />
+
+        <TextView
+            style="@style/service_tv13_color_333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:text="拒绝维修:" />
+
+        <TextView
+            android:id="@+id/tv_refuse_location"
+            style="@style/service_tv13_color_333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_15"
+            android:layout_marginTop="12dp"
+            tools:text="XXXXXX；XXXXXX；XXXXXX盛世嫡妃撒地方撒地方撒地方是的速度是的发送的发送的发送地方是" />
+
+    </LinearLayout>
+
+    <View style="@style/service_diver_10" />
+
+</LinearLayout>

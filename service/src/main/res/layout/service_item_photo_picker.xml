@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fl_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="6dp"
+        tools:src="@drawable/service_logo" />
+
+    <FrameLayout
+        android:id="@+id/fl_delete"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="end">
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="end"
+            android:src="@drawable/service_ic_delete" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="6dp"
+        android:background="@drawable/service_shape_dash_stroke"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/service_ic_camera" />
+
+        <TextView
+            android:id="@+id/tv_current_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            android:text="@string/service_photo_delivery"
+            android:textColor="@color/DCDCDC" />
+
+    </LinearLayout>
+
+</FrameLayout>

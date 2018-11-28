@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <!--来往地址-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--From地址-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/margin_10"
+                android:paddingLeft="@dimen/margin_20"
+                android:paddingRight="@dimen/margin_30"
+                android:paddingTop="@dimen/margin_10">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="17dp">
+
+                        <TextView
+                            android:id="@+id/tv_address_name_top"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:maxWidth="100dp"
+                            android:singleLine="true"
+                            android:textColor="@color/color_333"
+                            android:textSize="@dimen/service_tv_13"
+                            tools:text="@string/service_contact" />
+
+                        <TextView
+                            android:id="@+id/tv_address_company_top"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/service_shape_rectangle_red"
+                            android:gravity="center"
+                            android:maxWidth="80dp"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingTop="2dp"
+                            android:singleLine="true"
+                            android:textColor="#EB4E3D"
+                            android:textSize="@dimen/service_tv_10"
+                            tools:text="嘉兴仓储" />
+
+                        <TextView
+                            android:id="@+id/tv_address_mobile_top"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:maxWidth="90dp"
+                            android:singleLine="true"
+                            android:textColor="@color/color_333"
+                            android:textSize="@dimen/service_tv_13"
+                            tools:text="18616314875" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/service_ic_address" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:text="地址:"
+                                android:textColor="@color/color_333"
+                                android:textSize="@dimen/service_tv_13" />
+
+                            <TextView
+                                android:id="@+id/tv_address_location_top"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:textColor="@color/color_333"
+                                android:textSize="@dimen/service_tv_13"
+                                tools:text="上海闵行区 田林路1036号科技绿洲16号楼302室田林" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="11dp"
+                    android:layout_height="11dp"
+                    android:background="@drawable/service_shape_circle_main_color" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="27dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/DCDCDC" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--To地址-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/service_ic_address_bg"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/margin_10"
+                android:paddingLeft="@dimen/margin_20"
+                android:paddingRight="@dimen/margin_30"
+                android:paddingTop="@dimen/margin_10">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="17dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/tv_address_name_bottom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxWidth="100dp"
+                            android:singleLine="true"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/service_tv_13"
+                            tools:text="联系人：张学友" />
+
+
+                        <TextView
+                            android:id="@+id/tv_address_company_bottom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/service_shape_rectangle_white"
+                            android:gravity="center"
+                            android:maxWidth="80dp"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:paddingTop="2dp"
+                            android:singleLine="true"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/service_tv_10"
+                            tools:text="嘉兴仓储中心嘉兴仓储中心" />
+
+
+                        <TextView
+                            android:id="@+id/tv_address_mobile_bottom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:maxWidth="90dp"
+                            android:singleLine="true"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/service_tv_13"
+                            tools:text="18616314875" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/service_ic_address_light" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:text="地址:"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/service_tv_13" />
+
+                            <TextView
+                                android:id="@+id/tv_address_location_bottom"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/service_tv_13"
+                                tools:text="上海闵行区 田林路1036号科技绿洲16号楼302室田林" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="27dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@color/DCDCDC" />
+
+
+                <View
+                    android:layout_width="11dp"
+                    android:layout_height="11dp"
+                    android:background="@drawable/service_shape_circle_white_color" />
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

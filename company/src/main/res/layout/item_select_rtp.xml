@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_10"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_10">
+
+    <FrameLayout
+        android:id="@+id/ll_res_boder"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/shape_boder"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_res_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_select"
+            style="@style/service_tv12_color_333"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="#9effffff"
+            android:gravity="center"
+            android:text="已选"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_res_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:gravity="center"
+        android:text="吨立方IF330"
+        android:textColor="#666666"
+        android:textSize="@dimen/textSize_14" />
+
+</LinearLayout>

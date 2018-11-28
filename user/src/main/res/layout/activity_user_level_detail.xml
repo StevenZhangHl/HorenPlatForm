@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f5"
+    android:orientation="vertical"
+    tools:context=".ui.activity.accout.UserLevelDetailActivity"
+    tools:ignore="ResourceName">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/customer_detail_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_15">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:padding="@dimen/margin_10"
+                android:src="@mipmap/icon_close_white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:text="等级说明"
+                android:textColor="@color/white"
+                android:textSize="18sp"></TextView>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_current_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="液体等级说明"
+            android:layout_marginTop="@dimen/margin_5"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_14" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp">
+
+            <LinearLayout
+                android:id="@+id/ll_left_y"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/textview_f5color_12size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="等级" />
+
+                <TextView
+                    android:id="@+id/tv_y_four"
+                    style="@style/textview_f5color_12size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="1"
+                    android:text="四级" />
+
+                <TextView
+                    android:id="@+id/tv_y_three"
+                    style="@style/textview_f5color_12size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="1"
+                    android:text="三级" />
+
+                <TextView
+                    android:id="@+id/tv_y_two"
+                    style="@style/textview_f5color_12size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="1"
+                    android:text="二级" />
+
+                <TextView
+                    android:id="@+id/tv_y_one"
+                    style="@style/textview_f5color_12size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="1"
+                    android:text="一级" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_balance_value"
+                style="@style/textview_whitecolor_12size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_15"
+                android:text="距下一级差8888业绩" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_trigonView"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="@dimen/margin_20"
+                android:layout_toRightOf="@+id/ll_left_y">
+
+                <RelativeLayout
+                    android:id="@+id/rl_current_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true">
+
+                    <ImageView
+                        android:id="@+id/iv_current_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/icon_small_fluid_four" />
+
+                    <TextView
+                        android:id="@+id/tv_current_level"
+                        style="@style/textview_whitecolor_12size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_5"
+                        android:layout_toRightOf="@+id/iv_current_level"
+                        android:gravity="center"
+                        android:text="四级" />
+                </RelativeLayout>
+
+                <com.horen.base.widget.TrigonView
+                    android:id="@+id/trigon_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/rl_current_level"
+                    android:layout_marginRight="@dimen/margin_10" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_level_zero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/margin_5"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_toRightOf="@+id/ll_left_y"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv_level_zero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/icon_small_fluid_four" />
+
+                <TextView
+                    android:id="@+id/tv_level_zero"
+                    style="@style/textview_whitecolor_12size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:layout_toRightOf="@+id/iv_level_zero"
+                    android:gravity="center"
+                    android:text="一级" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="0.2"
+            android:background="@color/white"></View>
+
+        <RelativeLayout
+            android:id="@+id/rl_left_x"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="41dp"
+            android:layout_marginRight="@dimen/margin_15"
+            android:layout_marginTop="11dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_x_one"
+                style="@style/textview_f5color_12size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:layout_marginRight="@dimen/margin_20"
+                android:layout_toLeftOf="@+id/tv_x_four"
+                android:layout_toRightOf="@+id/tv_x_one"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_x_two"
+                    style="@style/textview_f5color_12size"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/tv_x_three"
+                    style="@style/textview_f5color_12size"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text=""
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_x_four"
+                style="@style/textview_f5color_12size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/textview_whitecolor_12size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/margin_5"
+            android:gravity="center"
+            android:text="租赁收入（B）万" />
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="2000dp"
+        android:layout_margin="@dimen/margin_10"
+        android:background="@color/white"
+        app:cardCornerRadius="@dimen/margin_5"
+        app:contentPadding="@dimen/margin_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/textview_33color_15size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="经验值说明" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview_level_tip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="13dp"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

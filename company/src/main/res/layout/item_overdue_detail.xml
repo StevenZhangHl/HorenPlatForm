@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp_10"
+    android:background="@color/color_f5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:orientation="horizontal"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp">
+
+        <TextView
+            style="@style/service_tv13_color_666"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="超期产品:" />
+
+        <TextView
+            android:id="@+id/tv_overdue_product"
+            style="@style/service_tv13_color_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OF330非食品" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:orientation="horizontal"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp">
+
+        <TextView
+            style="@style/service_tv13_color_666"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="超期数量:" />
+
+        <TextView
+            android:id="@+id/tv_overdue_qty"
+            style="@style/service_tv13_color_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5个" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:orientation="horizontal"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp">
+
+        <TextView
+            style="@style/service_tv13_color_666"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="超期天数:" />
+
+        <TextView
+            android:id="@+id/tv_overdue_days"
+            style="@style/service_tv13_color_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15天" />
+
+    </LinearLayout>
+</LinearLayout>

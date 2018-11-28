@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f5"
+    android:orientation="vertical"
+    tools:context=".ui.activity.user.CashApplyActivity"
+    tools:ignore="ResourceName">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_15"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="转出金额(元)" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_15"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_15"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:id="@+id/tv_money_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="¥"
+                android:textColor="@color/color_333"
+                android:textSize="18sp" />
+
+            <com.horen.base.widget.PWEditText
+                android:id="@+id/et_cash_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_20"
+                android:layout_toLeftOf="@+id/tv_all_money"
+                android:layout_toRightOf="@+id/tv_money_txt"
+                android:background="@null"
+                android:hint="请输入金额"
+                android:maxLength="15"
+                android:textColor="@color/color_333"
+                android:textColorHint="@color/DCDCDC" />
+
+            <TextView
+                android:id="@+id/tv_all_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="全部"
+                android:textColor="@color/base_text_color_light"
+                android:textSize="@dimen/textSize_15" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.horen.base.widget.RippleButton
+        android:id="@+id/bt_subimit_cash_apply"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginTop="@dimen/margin_20"
+        android:enabled="false"
+        android:textSize="16sp"
+        app:gray_text="申请提现"
+        app:green_text="申请提现"
+        app:loading_text="申请提现中" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_10"
+        android:text="您的提现申请，将由平台线下与您沟通确认"
+        android:textColor="@color/color_666"
+        android:textSize="@dimen/textSize_13" />
+</LinearLayout>

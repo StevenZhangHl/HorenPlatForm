@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_value"
+    android:textColor="@color/base_text_color_light"
+    android:textSize="10sp"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layout_width="50dp"
+    android:layout_marginBottom="4dp"
+    android:layout_height="wrap_content"
+    android:text="测试" />

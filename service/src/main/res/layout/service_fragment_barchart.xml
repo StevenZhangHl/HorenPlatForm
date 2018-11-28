@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.horen.base.widget.HRTabView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_15"
+            android:layout_marginTop="100dp"
+            android:background="@color/white"
+            app:tab_strings="序号,耗材名称,型号,耗材量,库存量"
+            app:tab_text_color="@color/color_666"
+            app:tab_text_size="@dimen/textSize_13"
+            app:tab_weight="1,2,2,1,1" />
+
+        <com.horen.base.widget.HRTabView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_15"
+            android:background="@color/color_f5"
+            app:tab_strings="1,液袋,液袋液袋液袋,1000,1000"
+            app:tab_text_color="@color/color_666"
+            app:tab_text_size="@dimen/service_tv_12"
+            app:tab_weight="1,2,2,1,1" />
+
+        <com.horen.base.widget.HRTabView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_15"
+            android:background="@color/white"
+            app:tab_strings="1,液袋,液袋液袋液袋,1000,1000"
+            app:tab_text_color="@color/color_666"
+            app:tab_text_size="@dimen/service_tv_12"
+            app:tab_weight="1,2,2,1,1" />
+
+        <com.horen.base.widget.HRTabView
+            android:id="@+id/tab_view"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_15"
+            android:background="@color/color_f5"
+            app:tab_strings="1,液袋,液袋液袋液袋,1000,1000"
+            app:tab_text_color="@color/color_666"
+            app:tab_text_size="@dimen/service_tv_12"
+            app:tab_weight="1,2,2,1,1" />
+
+        <com.horen.base.widget.HRTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="是否是答非所问"
+            app:left_text="@string/service_clean_history" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/bar_chart"
+            android:layout_width="match_parent"
+            android:layout_height="250dp" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/single_bar_chart"
+            android:layout_width="match_parent"
+            android:layout_height="250dp" />
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

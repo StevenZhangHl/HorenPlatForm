@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <!--订单信息-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_20"
+        android:background="@color/color_f5" />
+
+    <TextView
+        style="@style/service_marginLeftRight_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="@string/service_order_info"
+        android:textColor="@color/color_333"
+        android:textSize="@dimen/service_tv_16" />
+
+    <FrameLayout
+        style="@style/service_marginLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <TextView
+            style="@style/service_tv13_color_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/service_service_distribution_order_tip" />
+
+        <TextView
+            android:id="@+id/tv_distribution_order"
+            style="@style/service_tv13_color_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            tools:text="CN_20180910_01" />
+    </FrameLayout>
+
+    <FrameLayout
+        style="@style/service_marginLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5">
+
+        <TextView
+            style="@style/service_tv13_color_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/service_need_time" />
+
+        <TextView
+            android:id="@+id/tv_need_time"
+            style="@style/service_tv13_color_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            tools:text="2018-08-29" />
+    </FrameLayout>
+
+    <FrameLayout
+        style="@style/service_marginLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginTop="@dimen/margin_5">
+
+        <TextView
+            style="@style/service_tv13_color_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/service_need_time_remaining" />
+
+        <TextView
+            android:id="@+id/tv_remaining_time"
+            style="@style/service_tv13_color_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            tools:text="3天" />
+    </FrameLayout>
+
+</LinearLayout>

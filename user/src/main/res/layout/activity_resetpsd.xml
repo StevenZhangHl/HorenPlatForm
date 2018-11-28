@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <com.horen.base.widget.HRToolbar
+        android:id="@+id/custom_bar"
+        app:title_elevation="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:is_white="true"
+        app:title="找回登录密码"
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/activity_resetpsd_phone"/>
+        <include layout="@layout/activity_resetpsd_code"/>
+        <include layout="@layout/activity_resetpsd_password"/>
+    </FrameLayout>
+</LinearLayout>

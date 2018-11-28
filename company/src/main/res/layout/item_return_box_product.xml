@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_content"
+    style="@style/service_paddingLeftRight_15"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingTop="7dp"
+    android:paddingBottom="7dp">
+
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        tools:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/service_tv13_color_333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="食品级吨立方" />
+
+        <TextView
+            android:id="@+id/tv_type"
+            style="@style/service_tv13_color_333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            tools:text="OF330" />
+
+        <TextView
+            android:id="@+id/tv_return_box_number"
+            style="@style/service_tv13_color_333"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_5"
+            android:gravity="bottom"
+            android:textColor="#F15B02"
+            tools:text="剩余还箱数: 20000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="end|bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/shape_white_radius_2"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/fl_delete"
+                android:layout_width="22dp"
+                android:layout_height="22dp">
+
+                <View
+                    android:layout_width="7dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="@color/color_666" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/DCDCDC" />
+
+            <EditText
+                android:id="@+id/et_number"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="8"
+                android:textColor="@color/color_333"
+                android:textSize="10sp"
+                tools:text="0" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/DCDCDC" />
+
+            <FrameLayout
+                android:id="@+id/fl_add"
+                android:layout_width="22dp"
+                android:layout_height="22dp">
+
+                <View
+                    android:layout_width="7dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="@color/color_666" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="7dp"
+                    android:layout_gravity="center"
+                    android:background="@color/color_666" />
+            </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

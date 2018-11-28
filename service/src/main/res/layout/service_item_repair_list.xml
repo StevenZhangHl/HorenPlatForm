@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_5"
+        android:background="@drawable/service_shape_orange_bg" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/margin_15">
+
+        <TextView
+            android:id="@+id/tv_serial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/service_repair_list"
+            android:textColor="@color/color_333" />
+
+        <ImageView
+            android:id="@+id/iv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginRight="@dimen/margin_5"
+            android:background="?attr/actionBarItemBackground"
+            android:padding="@dimen/margin_10"
+            android:src="@drawable/service_ic_edit" />
+    </FrameLayout>
+
+    <View
+        style="@style/divider"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_marginRight="@dimen/margin_15"
+        android:layout_marginTop="0dp" />
+
+    <!--箱号-->
+    <LinearLayout
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/service_box_number"
+            android:textColor="@color/color_999"
+            android:textSize="@dimen/textSize_15" />
+
+        <TextView
+            android:id="@+id/tv_box_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018-08-09"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/service_tv_13" />
+    </LinearLayout>
+
+    <!--损坏位置-->
+    <LinearLayout
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/service_damage_location_tip"
+            android:textColor="@color/color_999"
+            android:textSize="@dimen/textSize_15" />
+
+        <TextView
+            android:id="@+id/tv_damage_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="扭转锁卡扣、扭转锁、阀门翻盖总成、扭转锁卡扣、扭转锁、阀门翻盖总成"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/service_tv_13" />
+    </LinearLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_remake"
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="报修记录报修记录报修记录报修记录报修记录报修记录报修"
+        android:textColor="@color/color_333"
+        android:textSize="@dimen/textSize_15" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_photo"
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:overScrollMode="never" />
+
+    <View style="@style/service_diver_20" />
+</LinearLayout>

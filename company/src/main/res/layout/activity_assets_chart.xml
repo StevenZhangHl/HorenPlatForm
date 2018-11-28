@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="400dp"
+            android:layout_gravity="bottom"
+            android:layout_height="30dp"
+            android:background="@color/white"
+            app:tl_iconVisible="false"
+            app:tl_indicator_color="@color/base_text_color_light"
+            app:tl_indicator_height="1.5dp"
+            app:tl_tab_space_equal="true"
+            app:tl_textSelectColor="@color/base_text_color_light"
+            app:tl_textUnselectColor="@color/color_666"
+            app:tl_textsize="@dimen/textSize_13" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="@dimen/dp_10"
+            android:padding="@dimen/margin_5"
+            android:src="@drawable/icon_narrow" />
+    </FrameLayout>
+
+    <View
+        style="@style/service_diver_10"
+        android:layout_height="5dp" />
+
+    <com.horen.base.widget.HRViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

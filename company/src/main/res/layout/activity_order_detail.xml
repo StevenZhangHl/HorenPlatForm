@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f5"
+    android:orientation="vertical">
+
+    <com.horen.base.widget.HRTitle
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mTitle="订单详情" />
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--订单状态-->
+            <include layout="@layout/include_order_status" />
+            <!--上下游地址-->
+            <include layout="@layout/include_order_address_from_to" />
+            <!--订单物品-->
+            <include layout="@layout/include_order_product" />
+            <!--超期详情-->
+            <include layout="@layout/include_overdue_detail" />
+            <!--租赁方式-->
+            <include layout="@layout/include_lease_mode" />
+            <!--备注-->
+            <include layout="@layout/include_order_remarks" />
+            <!--订单信息-->
+            <include layout="@layout/include_order_info" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <FrameLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/shape_f1_bg"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <com.allen.library.SuperButton
+            android:id="@+id/sbt_bottom"
+            style="@style/service_tv14_color_333"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginRight="@dimen/margin_15"
+            android:gravity="end"
+            android:text="取消订单"
+            app:sCornersRadius="15dp"
+            app:sSolidColor="@color/white"
+            app:sStrokeColor="@color/DCDCDC"
+            app:sStrokeWidth="1dp" />
+    </FrameLayout>
+</LinearLayout>

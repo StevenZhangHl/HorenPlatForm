@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="service_toolbar_color">#87CD26</color>
+
+    <color name="service_color_6FB">#6FBA2C</color>
+    <color name="service_color_EF8">#EF8D06</color>
+    <color name="service_color_39C">#39C3C5</color>
+    <color name="service_color_D8F">#D8F1C2</color>
+    <color name="service_color_F15">#F15B02</color>
+    <color name="service_color_F15_transparent">#24F15B02</color>
+    <color name="service_color_EB4">#EB4E3D</color>
+</resources>

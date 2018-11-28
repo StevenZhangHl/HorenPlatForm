@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/service_paddingLeftRight_15"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginTop="@dimen/margin_10"
+    android:background="@drawable/service_shape_f1_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        style="@style/service_tv14_color_333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="派单单号：" />
+
+    <TextView
+        android:id="@+id/tv_order_number"
+        style="@style/service_tv14_color_333"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingRight="@dimen/margin_10"
+        android:singleLine="true"
+        tools:text="jkfjh92749240129" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/service_tv14_color_333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_10"
+        tools:text="2018-06-30" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/service_icon_arrow_right" />
+</LinearLayout>

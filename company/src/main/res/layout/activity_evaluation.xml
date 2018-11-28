@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f5"
+    android:orientation="vertical">
+
+    <com.horen.base.widget.HRTitle
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mRightTitle="发表评价"
+        app:mTitle="评价" />
+
+    <LinearLayout
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin_15">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_photo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tv_order_number"
+                style="@style/service_tv13_color_333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                tools:text="订单号：CN-20171012_01" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_30">
+
+            <LinearLayout
+                android:id="@+id/ll_product_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/service_tv15_color_333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="产品服务" />
+
+                <com.cb.ratingbar.CBRatingBar
+                    android:id="@+id/cb_product_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    app:starCanTouch="true"
+                    app:starCount="5"
+                    app:starCoverColor="@color/base_text_color_light"
+                    app:starCoverDir="left_to_right"
+                    app:starFillColor="@color/white"
+                    app:starMaxProgress="5"
+                    app:starSize="25dp"
+                    app:starSpace="10dp"
+                    app:starStrokeColor="@color/color_999"
+                    app:starStrokeWidth="1dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_logistics_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_product_service"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_20"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/service_tv15_color_333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="物流服务" />
+
+                <com.cb.ratingbar.CBRatingBar
+                    android:id="@+id/cb_logistics_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    app:starCanTouch="true"
+                    app:starCount="5"
+                    app:starCoverColor="@color/base_text_color_light"
+                    app:starCoverDir="left_to_right"
+                    app:starFillColor="@color/white"
+                    app:starMaxProgress="5"
+                    app:starSize="25dp"
+                    app:starSpace="10dp"
+                    app:starStrokeColor="@color/color_999"
+                    app:starStrokeWidth="1dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_logistics_service"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_20"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/service_tv15_color_333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="服务态度" />
+
+                <com.cb.ratingbar.CBRatingBar
+                    android:id="@+id/cb_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    app:starCanTouch="true"
+                    app:starCount="5"
+                    app:starCoverColor="@color/base_text_color_light"
+                    app:starCoverDir="left_to_right"
+                    app:starFillColor="@color/white"
+                    app:starMaxProgress="5"
+                    app:starSize="25dp"
+                    app:starSpace="10dp"
+                    app:starStrokeColor="@color/color_999"
+                    app:starStrokeWidth="1dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/et_evaluation"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginRight="@dimen/margin_15"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:background="@color/color_f5"
+            android:gravity="start"
+            android:hint="认真写评价的人最美哦"
+            android:padding="@dimen/dp_10"
+            android:textColor="@color/color_333"
+            android:textColorHint="@color/DCDCDC"
+            android:textSize="@dimen/textSize_13" />
+
+    </LinearLayout>
+</LinearLayout>

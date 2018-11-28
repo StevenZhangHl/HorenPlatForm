@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="all">
+    <color name="color_main_color" >#87CD25</color>
+    <color name="color_platform_title">#87CD24</color>
+    <color name="bg">#F5F5F5</color>
+    <color name="text_title_color">#333333</color>
+    <color name="bar_color">#F15B02</color>
+    <color name="bar_warning_color">#FF0000</color>
+    <color name="line_chart_send_color">#EF8D06</color>
+    <color name="color_main_high">#5CA020</color>
+    <color name="color_barcolor_start">#AAF963</color>
+    <color name="color_barcolor_end">#F77C33</color>
+</resources>

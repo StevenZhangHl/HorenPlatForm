@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:layout_gravity="bottom"
+    android:background="@color/white">
+
+    <View style="@style/service_diver_f1" />
+
+    <com.allen.library.SuperButton
+        android:id="@+id/sbt_complete"
+        android:layout_width="105dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:enabled="false"
+        android:text="@string/service_repair_complete"
+        android:textColor="@color/color_999"
+        android:textSize="@dimen/textSize_14"
+        app:sSelectorDisableColor="@color/DCDCDC"
+        app:sSelectorNormalColor="@color/color_main"
+        app:sSelectorPressedColor="@color/color_main"
+        app:sUseSelector="true" />
+</FrameLayout>

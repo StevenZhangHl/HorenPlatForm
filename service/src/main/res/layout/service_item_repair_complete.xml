@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View style="@style/service_diver_10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/service_shape_f1_bg"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin_10"
+        android:paddingTop="@dimen/margin_10">
+        <!--服务单号-->
+        <LinearLayout
+            style="@style/service_paddingLeftRight_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/service_order_number"
+                android:textColor="@color/color_999"
+                android:textSize="@dimen/textSize_15" />
+
+            <TextView
+                android:id="@+id/tv_service_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1005979F102"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/service_tv_13" />
+        </LinearLayout>
+
+        <!--箱号-->
+        <LinearLayout
+            style="@style/service_paddingLeftRight_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/service_box_number"
+                android:textColor="@color/color_999"
+                android:textSize="@dimen/textSize_15" />
+
+            <TextView
+                android:id="@+id/tv_box_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1065449797 797978"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/service_tv_13" />
+        </LinearLayout>
+
+        <!--维修日期-->
+        <LinearLayout
+            style="@style/service_paddingLeftRight_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/service_repair_date"
+                android:textColor="@color/color_999"
+                android:textSize="@dimen/textSize_15" />
+
+            <TextView
+                android:id="@+id/tv_repair_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2018-08-09"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/service_tv_13" />
+        </LinearLayout>
+    </LinearLayout>
+    <!--损坏位置-->
+    <include layout="@layout/service_include_damage_location" />
+
+    <TextView
+        android:id="@+id/tv_remake"
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20"
+        android:text="报修记录报修记录报修记录报修记录报修记录报修记录报修"
+        android:textColor="@color/color_333"
+        android:textSize="@dimen/textSize_15"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_photo"
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_15"
+        android:layout_marginTop="@dimen/margin_15"
+        android:overScrollMode="never" />
+
+</LinearLayout>

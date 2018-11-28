@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_content"
+    style="@style/service_marginLeftRight_15"
+    android:layout_width="match_parent"
+    android:layout_height="25dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:singleLine="true"
+        android:id="@+id/tv_name"
+        style="@style/service_tv12_color_666"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:text="喉箍" />
+
+    <TextView
+        android:id="@+id/tv_type"
+        style="@style/service_tv12_color_666"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:text="IOIEF" />
+
+    <TextView
+        android:id="@+id/tv_unit"
+        style="@style/service_tv12_color_666"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="套" />
+
+
+    <TextView
+        android:id="@+id/tv_inventory"
+        style="@style/service_tv12_color_666"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:text="100" />
+</LinearLayout>

@@ -1,0 +1,54 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cyy.company">
+
+    <application>
+        <!--用户端首页-->
+        <activity android:name=".ui.activity.CompanyMainActivity" />
+        <!--未登录首页-->
+        <activity android:name=".ui.activity.UnLoginMainActivity" />
+        <!--扫码登陆-->
+        <activity android:name=".ui.activity.main.ScanLoginActivity" />
+        <!--消息中心-->
+        <activity
+            android:name=".ui.activity.me.MessageActivity"
+            android:launchMode="singleTop" />
+        <!--地址簿-->
+        <activity android:name=".ui.activity.me.AddressBookActivity" />
+        <!--地址簿编辑-->
+        <activity android:name=".ui.activity.me.AddressEditActivity" />
+        <!--订单列表-->
+        <activity android:name=".ui.activity.me.OrderListActivity" />
+        <!--评价页面-->
+        <activity android:name=".ui.activity.me.EvaluationActivity" />
+        <!--订单详情-->
+        <activity android:name=".ui.activity.me.OrderDetailActivity" />
+        <!--账号管理-->
+        <activity android:name="com.cyy.company.ui.activity.me.AccountManagerActivity" />
+        <!--编辑账号-->
+        <activity android:name="com.cyy.company.ui.activity.me.EditAccountActivity" />
+        <!--物流跟踪-->
+        <activity android:name="com.cyy.company.ui.activity.me.LogisticsMapActivity" />
+        <!--账单管理-->
+        <activity android:name="com.cyy.company.ui.activity.me.BillManagerActivity" />
+        <!--账单管理详情-->
+        <activity android:name="com.cyy.company.ui.activity.me.BillManagerDetailActivity" />
+        <!--创建订单-->
+        <activity android:name=".ui.activity.order.CreateOrderActivity" />
+        <!--订单上游企业地址-->
+        <activity android:name=".ui.activity.order.OrderAddressActivity" />
+        <!--订单提交成功-->
+        <activity android:name=".ui.activity.order.OrderSuccessActivity" />
+        <!--资产分析 图表-->
+        <activity android:name=".ui.activity.eye.AssetsChartActivity" />
+        <!--创建还箱-->
+        <activity android:name=".ui.activity.eye.CreateReturnActivity" />
+        <!--资产列表-->
+        <activity android:name=".ui.activity.eye.AssetsListActivity" />
+        <!--还箱订单-->
+        <activity android:name=".ui.activity.me.ReturnBoxListActivity" />
+        <!--下游还箱成功-->
+        <activity android:name=".ui.activity.order.DownOrderSuccessActivity" />
+        <!--还箱点-->
+        <activity android:name=".ui.activity.me.ReturnIntegralActivity" />
+    </application>
+</manifest>

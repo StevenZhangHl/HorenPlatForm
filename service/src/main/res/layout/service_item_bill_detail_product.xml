@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.horen.base.widget.HRTabView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tab_view"
+    android:layout_width="match_parent"
+    android:layout_height="28dp"
+    app:tab_strings="XXXXX,XXXXXXXXXX,1000,1000"
+    app:tab_text_color="@color/color_666"
+    app:tab_text_size="@dimen/textSize_12"
+    app:tab_weight="1,2,1,1">
+
+</com.horen.base.widget.HRTabView>

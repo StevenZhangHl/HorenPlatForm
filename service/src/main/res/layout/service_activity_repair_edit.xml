@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <com.horen.base.widget.HRToolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:is_white="true"
+        app:title="@string/service_edit" />
+
+    <LinearLayout
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10">
+
+        <TextView
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:text="@string/service_order_number"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/textSize_15" />
+
+        <TextView
+            android:id="@+id/tv_order_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1000249879 49797"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/service_tv_13" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10">
+
+        <TextView
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:text="@string/service_box_number"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/textSize_15" />
+
+        <TextView
+            android:id="@+id/tv_box_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="016000284 1749879"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/service_tv_13" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10">
+
+        <TextView
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:text="@string/service_report_date"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/textSize_15" />
+
+        <TextView
+            android:id="@+id/tv_report_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018-08-09"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/service_tv_13" />
+    </LinearLayout>
+
+    <View
+        style="@style/service_diver_10"
+        android:layout_marginTop="@dimen/margin_10" />
+
+    <View style="@style/service_diver_f1" />
+    <!--责任人-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_15">
+
+            <TextView
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:text="@string/service_person_liable"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/service_tv_16" />
+
+            <EditText
+                android:id="@+id/et_responsible_party"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:enabled="false"
+                android:hint="@string/service_select_person_liable"
+                android:textColor="@color/color_333"
+                android:textColorHint="@color/DCDCDC"
+                android:textSize="@dimen/service_tv_13" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_5"
+                android:background="?attr/actionBarItemBackground"
+                android:padding="@dimen/dp_10"
+                android:src="@drawable/service_ic_down" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_person_liable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+    <!--备注-->
+    <include layout="@layout/service_input_remake" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_photo_picker"
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:paddingBottom="@dimen/margin_10" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white" />
+
+    <com.horen.base.widget.RippleButton
+        android:id="@+id/rbt_save"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/dp_40"
+        android:layout_marginLeft="@dimen/margin_30"
+        android:layout_marginRight="@dimen/margin_30"
+        app:gray_text="@string/service_save"
+        app:loading_text="@string/service_saving" />
+</LinearLayout>

@@ -1,0 +1,49 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.horen.service">
+
+    <application>
+        <!--主页面-->
+        <activity android:name=".ui.activity.main.ServiceMainActivity" />
+        <!--入库详情-->
+        <activity android:name=".ui.activity.business.StorageDetailActivity" />
+        <!--出库详情-->
+        <activity android:name=".ui.activity.business.OutDetailActivity" />
+        <!--出库已完成-->
+        <activity android:name=".ui.activity.business.OutCompleteActivity" />
+        <!--入库已完成-->
+        <activity android:name=".ui.activity.business.StorageCompleteActivity" />
+        <!--平台调度-->
+        <activity android:name=".ui.activity.business.SchedulingActivity" />
+        <!--平台调度已完成-->
+        <activity android:name=".ui.activity.business.SchedulingCompleteActivity" />
+        <!--维修详情-->
+        <activity android:name=".ui.activity.service.RepairDetailActivity" />
+        <!--维修编辑-->
+        <activity
+            android:name=".ui.activity.service.RepairEditActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!--维修处理-->
+        <activity android:name=".ui.activity.service.RepairDealWithActivity" />
+        <!--新增报修-->
+        <activity
+            android:name=".ui.activity.service.RepairAddActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <!--报修列表-->
+        <activity android:name=".ui.activity.service.RepairListActivity" />
+        <!--维修历史-->
+        <activity android:name=".ui.activity.service.RepairCompleteActivity" />
+        <!--清洗历史-->
+        <activity android:name=".ui.activity.service.CleanCompleteActivity" />
+        <!--出入库详情-->
+        <activity android:name=".ui.activity.storage.OutofStorageDetailActivity" />
+        <!--账单详情-->
+        <activity android:name=".ui.activity.bill.BillDetailActivity" />
+        <!--账单已完成详情-->
+        <activity android:name=".ui.activity.bill.BillCompleteActivity" />
+        <!--账单运费-->
+        <activity android:name=".ui.activity.bill.BillTransportActivity" />
+        <!--账单运费详情-->
+        <activity android:name=".ui.activity.bill.BillTransportDetailActivity" />
+    </application>
+
+</manifest>

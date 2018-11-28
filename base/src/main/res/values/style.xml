@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="greenToolbarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="toolbarNavigationButtonStyle">@style/myToolbarNavigationButtonStyle</item>
+    </style>
+
+    <style name="whiteToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="toolbarNavigationButtonStyle">@style/myToolbarNavigationButtonStyle</item>
+    </style>
+
+    <style name="myToolbarNavigationButtonStyle" parent="@style/Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="android:minWidth">0dp</item>
+        <item name="android:paddingLeft">0dp</item>
+
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+
+    <!--全屏-->
+    <style name="FullScreen" parent="@android:style/Theme.NoTitleBar.Fullscreen"></style>
+
+
+    <style name="base_text">
+        <item name="android:textColor">@color/color_333</item>
+        <item name="android:textSize">15sp</item>
+
+    </style>
+
+    <!--距离左右边距-->
+
+    <!--底部线-->
+    <style name="divider">
+        <item name="android:background">@color/divider_color</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <!--底部线-->
+    <style name="divider_10">
+        <item name="android:background">@color/color_f5</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">10dp</item>
+    </style>
+
+    <!--普通dialog-->
+    <style name="CustomProgressDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <declare-styleable name="MenuItem">
+        <attr name="menu_title" format="string" />
+        <attr name="icon" format="reference" />
+    </declare-styleable>
+
+    <style name="Animation_top_left">
+        <item name="android:windowEnterAnimation">@anim/open_top_left</item>
+        <item name="android:windowExitAnimation">@anim/close_top_left</item>
+    </style>
+
+    <style name="Animation_bottom_left">
+        <item name="android:windowEnterAnimation">@anim/open_bottom_left</item>
+        <item name="android:windowExitAnimation">@anim/close_bottom_left</item>
+    </style>
+
+    <style name="Animation_bottom_right">
+        <item name="android:windowEnterAnimation">@anim/open_bottom_right</item>
+        <item name="android:windowExitAnimation">@anim/close_bottom_right</item>
+    </style>
+
+    <style name="Animation_top_right">
+        <item name="android:windowEnterAnimation">@anim/open_top_right</item>
+        <item name="android:windowExitAnimation">@anim/close_top_right</item>
+    </style>
+    <!--防止TabLayout字体全大写-->
+    <style name="TabLayoutTextStyle" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <!--选择图片主题-->
+    <style name="Matisse.HOREN" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/color_main</item>
+        <item name="colorPrimaryDark">@color/color_main</item>
+        <item name="toolbar">@style/Toolbar.Zhihu</item>
+        <item name="album.dropdown.title.color">@color/zhihu_album_dropdown_title_text</item>
+        <item name="album.dropdown.count.color">@color/zhihu_album_dropdown_count_text</item>
+        <item name="album.element.color">@android:color/white</item>
+        <item name="album.thumbnail.placeholder">@color/zhihu_album_dropdown_thumbnail_placeholder
+        </item>
+        <item name="album.emptyView">@drawable/ic_empty_zhihu</item>
+        <item name="album.emptyView.textColor">@color/zhihu_album_empty_view</item>
+        <item name="item.placeholder">@color/zhihu_item_placeholder</item>
+        <item name="item.checkCircle.backgroundColor">
+            @color/color_main
+        </item>
+        <item name="item.checkCircle.borderColor">@color/zhihu_item_checkCircle_borderColor</item>
+        <item name="page.bg">@color/zhihu_page_bg</item>
+        <item name="bottomToolbar.bg">@color/zhihu_bottom_toolbar_bg</item>
+        <item name="bottomToolbar.preview.textColor">@color/zhihu_bottom_toolbar_preview</item>
+        <item name="bottomToolbar.apply.textColor">@color/color_main</item>
+        <item name="preview.bottomToolbar.back.textColor">
+            @color/zhihu_preview_bottom_toolbar_back_text
+        </item>
+        <item name="preview.bottomToolbar.apply.textColor">
+            @color/zhihu_preview_bottom_toolbar_apply
+        </item>
+        <item name="listPopupWindowStyle">@style/Popup.Zhihu</item>
+        <item name="capture.textColor">@color/zhihu_capture</item>
+    </style>
+
+
+
+    <!--第一级文字-->
+    <style name="service_tv15_color_333">
+        <item name="android:textColor">@color/color_333</item>
+        <item name="android:textSize">@dimen/textSize_15</item>
+    </style>
+
+    <style name="service_tv15_color_999">
+        <item name="android:textColor">@color/color_999</item>
+        <item name="android:textSize">@dimen/textSize_15</item>
+    </style>
+
+    <style name="service_tv12_color_999">
+        <item name="android:textColor">@color/color_999</item>
+        <item name="android:textSize">@dimen/textSize_12</item>
+    </style>
+
+
+    <style name="service_tv14_color_333">
+        <item name="android:textColor">@color/color_333</item>
+        <item name="android:textSize">@dimen/textSize_14</item>
+    </style>
+
+    <!--第一级文字-->
+    <style name="service_tv13_color_333">
+        <item name="android:textColor">@color/color_333</item>
+        <item name="android:textSize">@dimen/textSize_13</item>
+    </style>
+    <style name="service_tv12_color_878">
+        <item name="android:textColor">@color/color_878</item>
+        <item name="android:textSize">@dimen/textSize_12</item>
+    </style>
+    <!--第二级文字-->
+    <style name="service_tv13_color_666">
+        <item name="android:textColor">@color/color_666</item>
+        <item name="android:textSize">@dimen/textSize_13</item>
+    </style>
+    <!--第三级文字-->
+    <style name="service_tv12_color_333">
+        <item name="android:textColor">@color/color_333</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+    <!--第三级文字-->
+    <style name="service_tv12_color_666">
+        <item name="android:textColor">@color/color_666</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+    </style>
+    <!--10dp高度分割线-->
+    <style name="service_diver_10">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_10</item>
+        <item name="android:background">@color/color_f5</item>
+    </style>
+    <!--20dp高度分割线-->
+    <style name="service_diver_20">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:background">@color/color_f5</item>
+    </style>
+    <!--#f1f1f1 分割线-->
+    <style name="service_diver_f1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/color_f1</item>
+    </style>
+    <!--#f1f1f1 分割线-->
+    <style name="service_diver_f1_margin_15">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/color_f1</item>
+        <item name="android:layout_marginLeft">@dimen/margin_15</item>
+        <item name="android:layout_marginRight">@dimen/margin_15</item>
+    </style>
+
+    <style name="service_paddingLeftRight_15">
+        <item name="android:paddingLeft">@dimen/margin_15</item>
+        <item name="android:paddingRight">@dimen/margin_15</item>
+    </style>
+
+    <style name="service_marginLeftRight_15">
+        <item name="android:layout_marginLeft">@dimen/margin_15</item>
+        <item name="android:layout_marginRight">@dimen/margin_15</item>
+    </style>
+
+</resources>

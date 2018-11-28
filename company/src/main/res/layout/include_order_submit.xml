@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/white"
+    android:gravity="right"
+    android:orientation="vertical">
+
+    <View style="@style/service_diver_f1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_money"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_preferential"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="优惠: ¥ 0"
+                android:textColor="@color/base_text_color_light"
+                android:textSize="@dimen/textSize_12" />
+            <!--已获取到金额UI-->
+            <LinearLayout
+                android:id="@+id/tv_amount_details_click"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                tools:visibility="visible">
+
+                <TextView
+                    style="@style/service_tv13_color_666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="合计金额:" />
+
+                <TextView
+                    android:id="@+id/tv_order_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:text="¥89868.00"
+                    android:textColor="@color/base_text_color_light"
+                    android:textSize="@dimen/textSize_13" />
+
+                <TextView
+                    style="@style/service_tv13_color_333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:drawableRight="@drawable/icon_up_back"
+                    android:drawablePadding="@dimen/margin_5"
+                    android:text="明细" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!--未获取到金额UI-->
+        <LinearLayout
+            android:id="@+id/ll_money_null"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_bottom_money_name"
+                style="@style/service_tv13_color_333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="合计金额:" />
+
+            <TextView
+                android:id="@+id/tv_amount_zero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="¥_"
+                android:textColor="@color/color_main_color"
+                android:textSize="@dimen/textSize_13" />
+
+        </LinearLayout>
+
+        <com.allen.library.SuperButton
+            android:id="@+id/tv_submit_click"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_30"
+            android:background="@color/color_main_color"
+            android:drawablePadding="@dimen/margin_5"
+            android:enabled="false"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingTop="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_20"
+            android:paddingBottom="@dimen/margin_10"
+            android:text="提交订单"
+            android:textColor="@color/color_999"
+            android:textSize="@dimen/textSize_14"
+            app:sSelectorDisableColor="@color/DCDCDC"
+            app:sSelectorNormalColor="@color/color_main_color"
+            app:sSelectorPressedColor="@color/color_main_color"
+            app:sUseSelector="true" />
+
+    </LinearLayout>
+
+</LinearLayout>

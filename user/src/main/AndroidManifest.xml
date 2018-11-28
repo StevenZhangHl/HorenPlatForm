@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.horen.user">
+
+    <application>
+
+        <!-- 主页面 -->
+        <activity android:name=".ui.activity.PlatformActivity" />
+        <activity android:name=".ui.activity.LoginActivity" />
+        <!-- 基本信息 -->
+        <activity android:name=".ui.activity.accout.UserInfoActivity" />
+        <!-- 业务范围 -->
+        <activity android:name=".ui.activity.service.BusinessScopeActivity" />
+        <!-- 更改仓储地址 -->
+        <activity android:name=".ui.activity.service.StorageAddressActivity" />
+        <!-- 更改联系人 -->
+        <activity android:name=".ui.activity.accout.ChangeContactsActivity" />
+        <!-- 更改联系电话 -->
+        <activity android:name=".ui.activity.accout.ChangePhoneActivity" />
+        <!-- 更换手机号验证码 -->
+        <activity android:name=".ui.activity.accout.ModifyPhoneActivity" />
+        <!-- 地址模糊搜索 -->
+        <activity android:name=".ui.activity.service.AddressSugActivity" />
+        <!-- 平台支援人员 -->
+        <activity android:name=".ui.activity.accout.PlatformSupportActivity" />
+        <!-- 头像裁剪 -->
+        <activity android:name=".ui.activity.ClipImageActivity" />
+        <!-- 修改/找回密码 -->
+        <activity android:name=".ui.activity.accout.ResetpsdActivity" />
+        <activity android:name=".ui.activity.accout.UserLevelDetailActivity" />
+        <activity android:name=".ui.activity.RegisterActivity" />
+        <activity android:name=".ui.activity.VerificationCodeActivity" />
+        <!--预约咨询师-->
+        <activity android:name=".ui.activity.RegisterConsultantActivity" />
+        <!--预约注册选择-->
+        <activity android:name=".ui.activity.RegisterSelectActivity" />
+        <!--设置-->
+        <activity android:name=".ui.activity.accout.SettingActivity" />
+        <!--投诉建议-->
+        <activity android:name=".ui.activity.accout.ComplaintsActivity" />
+        <!--所属企业-->
+        <activity android:name=".ui.activity.accout.CompanyInfoActivity" />
+    </application>
+
+</manifest>

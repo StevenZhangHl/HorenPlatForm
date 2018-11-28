@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_cooperation_rules"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/margin_15"
+    android:layout_marginRight="@dimen/margin_15"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical"
+    android:visibility="gone"
+    tools:visibility="visible"
+    tools:ignore="ResourceName">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. 合作内容"
+            android:textColor="@color/text_title_color"
+            android:textSize="@dimen/textSize_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="箱箱合伙人是以个人或者企业的身份与箱箱共用平台签订合作协议，承担箱箱共用在当地市场的业务开发和客户关系维护工作。"
+            android:textColor="@color/color_666"
+            android:textSize="@dimen/textSize_13" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. 合作佣金"
+            android:textColor="@color/text_title_color"
+            android:textSize="@dimen/textSize_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="left"
+            android:text="箱箱共用平台根据合伙人的业绩给予双方约定的奖励和报酬。"
+            android:textColor="@color/color_666"
+            android:textSize="@dimen/textSize_13" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="客户下单、收款、收发箱等环节应全部在箱箱共用平台上操作，箱箱共用收到客户全款后给予合伙人佣金。"
+            android:textColor="@color/color_666"
+            android:textSize="@dimen/textSize_13" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. 择优合作"
+            android:textColor="@color/text_title_color"
+            android:textSize="@dimen/textSize_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="为保持区域竞争力和合伙人的权益，箱箱共用将实行区域授权合伙人制度，并控制其总数。定期评估择优合作，同时根据合伙人的自身情况给予专属的权益。"
+            android:textColor="@color/color_666"
+            android:textSize="@dimen/textSize_13" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:paddingBottom="92dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. 合作版块"
+            android:textColor="@color/text_title_color"
+            android:textSize="@dimen/textSize_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="合伙人须经过箱箱共用的三大板块（散装液体、商超生鲜、汽车配件）的专业培训，培训合格后颁发对应板块箱箱合伙人授权书。"
+            android:textColor="@color/color_666"
+            android:textSize="@dimen/textSize_13" />
+    </LinearLayout>
+</LinearLayout>

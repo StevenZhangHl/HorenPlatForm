@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/service_paddingLeftRight_15"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_status"
+                style="@style/service_tv13_color_333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="耗材出库费" />
+
+            <TextView
+                style="@style/service_tv13_color_333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="(元)" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5">
+
+            <TextView
+                style="@style/service_tv12_color_666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[ 总费用:  " />
+
+            <TextView
+                android:id="@+id/tv_money"
+                style="@style/service_tv12_color_666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="1000" />
+
+            <TextView
+                style="@style/service_tv12_color_666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" ]" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/service_tv12_color_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            android:text="2018-08-30" />
+
+        <View
+            android:id="@+id/divider"
+            style="@style/service_diver_f1"
+            android:layout_marginTop="@dimen/margin_5" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center_vertical"
+        android:gravity="end"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/service_tv12_color_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未收" />
+
+        <TextView
+            android:id="@+id/tv_outstanding_money"
+            style="@style/service_tv12_color_666"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="-9087.00"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/textSize_16" />
+
+    </LinearLayout>
+
+</FrameLayout>

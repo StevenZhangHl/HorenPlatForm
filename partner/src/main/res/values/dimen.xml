@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ResourceName">
+    <dimen name="font_normal2">16sp</dimen>
+    <!-- 阴影高度-->
+    <dimen name="elevation_height">2dp</dimen>
+    <!-- 阴影控件marginTop高度-->
+    <dimen name="elevation_top">4dp</dimen>
+    <!-- 阴影控件marginBottom高度-->
+    <dimen name="elevation_bottom">6dp</dimen>
+    <!--CardView圆角-->
+    <dimen name="card_radius">6dp</dimen>
+</resources>

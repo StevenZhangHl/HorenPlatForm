@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f5"
+    android:orientation="vertical">
+
+    <com.horen.base.widget.HRTitle
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mRightTitle="保存"
+        app:mTitle="编辑地址" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/service_paddingLeftRight_15"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/service_tv15_color_333"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="姓名" />
+
+            <com.horen.base.widget.PWEditText
+                android:id="@+id/et_name"
+                style="@style/service_tv13_color_333"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:hint="请输入姓名"
+                android:text="邵霞" />
+        </LinearLayout>
+
+        <View style="@style/service_diver_f1_margin_15" />
+
+        <LinearLayout
+            style="@style/service_paddingLeftRight_15"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/service_tv15_color_333"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="联系电话" />
+
+            <com.horen.base.widget.PWEditText
+                android:id="@+id/et_phone"
+                style="@style/service_tv13_color_333"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:hint="请输入联系电话"
+                android:text="17082317723" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/service_paddingLeftRight_15"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/service_tv15_color_999"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="网点名称" />
+
+            <TextView
+                android:id="@+id/tv_org_name"
+                style="@style/service_tv15_color_999"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="嘉兴大仓" />
+        </LinearLayout>
+
+        <View style="@style/service_diver_f1_margin_15" />
+
+        <LinearLayout
+            style="@style/service_paddingLeftRight_15"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/service_tv15_color_999"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="联系电话" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                style="@style/service_tv15_color_999"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="中国福建省厦门市莲花五村龙昌里344号" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_normal"
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="默认"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/textSize_16" />
+
+        <com.suke.widget.SwitchButton
+            android:id="@+id/switch_button"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            app:sb_checked_color="@color/base_text_color_light"
+            app:sb_show_indicator="false"
+            app:sb_uncheck_color="@color/DCDCDC" />
+    </LinearLayout>
+</LinearLayout>

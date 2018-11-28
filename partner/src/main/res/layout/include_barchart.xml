@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:ignore="ResourceName">
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/textview_66color_12size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:text="天" />
+        <TextView
+            style="@style/textview_66color_15size"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:text="保护期天数" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bar_height"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="17dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:text="120"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/textSize_11" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="17dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:text="80"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/textSize_11" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="17dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:text="40"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/textSize_11" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="17dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:text="0"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/textSize_11" />
+        </LinearLayout>
+
+        <com.horen.partner.ui.widget.MyHorizontalScrollView
+            android:id="@+id/scrollView_y"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:overScrollMode="never"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_10"
+            android:scrollbars="none">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview_y"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"></android.support.v7.widget.RecyclerView>
+        </com.horen.partner.ui.widget.MyHorizontalScrollView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/DCDCDC"></View>
+
+    <com.horen.partner.ui.widget.MyHorizontalScrollView
+        android:id="@+id/scrollView_x"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:minHeight="@dimen/margin_10"
+        android:background="@color/white"
+        android:overScrollMode="never"
+        android:paddingLeft="@dimen/dp_40"
+        android:paddingRight="@dimen/margin_10"
+        android:layout_marginBottom="3dp"
+        android:scrollbars="none">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_x"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"></android.support.v7.widget.RecyclerView>
+    </com.horen.partner.ui.widget.MyHorizontalScrollView>
+</LinearLayout>

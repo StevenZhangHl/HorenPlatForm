@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f5"
+    android:overScrollMode="never">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+        <!--调度类型-->
+        <com.allen.library.SuperButton
+            android:id="@+id/sbt_order_type"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:paddingLeft="@dimen/margin_15"
+            tools:text="@string/service_scheduling_type"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_15"
+            app:sGradientEndColor="@color/service_color_6FB"
+            app:sGradientOrientation="LEFT_RIGHT"
+            app:sGradientStartColor="@color/color_main"
+            app:sGravity="left" />
+
+        <View style="@style/service_diver_10" />
+        <!--调度单号-->
+        <LinearLayout
+            android:id="@+id/ll_order"
+            style="@style/service_paddingLeftRight_15"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_order_number"
+                style="@style/service_tv13_color_333"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="@string/service_scheduling_order_number" />
+
+            <TextView
+                android:id="@+id/tv_order_time"
+                style="@style/service_tv12_color_666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="@string/service_order_time" />
+        </LinearLayout>
+
+        <View style="@style/service_diver_20" />
+
+        <include layout="@layout/service_order_list_header" />
+        <!--出库订单物品详情-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_order_child"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/service_item_order_list" />
+
+        <View style="@style/service_diver_20" />
+        <!--备注-->
+        <include layout="@layout/service_include_remake" />
+
+        <View style="@style/service_diver_10" />
+        <!--图片选择-->
+        <include layout="@layout/service_include_photo_picker" />
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

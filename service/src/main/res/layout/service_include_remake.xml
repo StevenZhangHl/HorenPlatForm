@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/margin_15">
+
+    <TextView
+        style="@style/service_tv13_color_666"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/service_remake" />
+
+    <EditText
+        android:inputType="text"
+        android:id="@+id/pet_remake"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:enabled="true"
+        android:hint="@string/service_input_remake"
+        android:maxLength="50"
+        android:textColor="@color/color_666"
+        android:textColorHint="@color/DCDCDC"
+        android:textSize="@dimen/service_tv_13"
+        tools:text="你看这个箱子又大又宽" />
+
+    <ImageView
+        android:id="@+id/iv_edit_remake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_5"
+        android:background="?attr/actionBarItemBackground"
+        android:padding="10dp"
+        android:src="@drawable/service_ic_edit" />
+</LinearLayout>

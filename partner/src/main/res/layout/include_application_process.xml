@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_applicaiton_process"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/margin_15"
+    android:layout_marginRight="@dimen/margin_15"
+    android:layout_marginTop="20dp"
+    android:visibility="gone"
+    tools:visibility="visible"
+    android:orientation="vertical"
+    tools:ignore="ResourceName">
+    <!--申请合伙人-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_application_partner" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. 申请合伙人"
+                android:textColor="@color/text_title_color"
+                android:textSize="@dimen/textSize_16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="通过箱箱共用APP在线申请"
+                android:textColor="@color/color_666"
+                android:textSize="@dimen/textSize_13" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--电话访谈-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_telephone_communication" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. 电话访谈"
+                android:textColor="@color/text_title_color"
+                android:textSize="@dimen/textSize_16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="核实合伙人相关事宜"
+                android:textColor="@color/color_666"
+                android:textSize="@dimen/textSize_13" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!--电话访谈-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_city" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. 确定城市"
+                android:textColor="@color/text_title_color"
+                android:textSize="@dimen/textSize_16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="确定合伙人代理城市区域"
+                android:textColor="@color/color_666"
+                android:textSize="@dimen/textSize_13" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--申请批准-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_approved" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. 申请批准"
+                android:textColor="@color/text_title_color"
+                android:textSize="@dimen/textSize_16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="同意并签订协议书 "
+                android:textColor="@color/color_666"
+                android:textSize="@dimen/textSize_13" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="颁发经营授权书、授权牌"
+                android:textColor="@color/color_666"
+                android:textSize="@dimen/textSize_13" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="证明合伙人对“箱箱共用”商标使用权"
+                android:textColor="@color/color_666"
+                android:textSize="@dimen/textSize_13" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!--5. 合伙人专业培训-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_training" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5. 合伙人专业培训"
+                android:textColor="@color/text_title_color"
+                android:textSize="@dimen/textSize_16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="RTP产品培训  "
+                android:textColor="@color/color_666"
+                android:textSize="@dimen/textSize_13" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="销售管理培训"
+                android:textColor="@color/color_666"
+                android:textSize="@dimen/textSize_13" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="运营管理培训"
+                android:textColor="@color/color_666"
+                android:textSize="@dimen/textSize_13" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!--6. 业务开展-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_business_development" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6. 业务开展"
+                android:textColor="@color/text_title_color"
+                android:textSize="@dimen/textSize_16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="培训合格后正式运营"
+                android:textColor="@color/color_666"
+                android:textSize="@dimen/textSize_13" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!--7. 市场经营指导-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:paddingBottom="92dp">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_guide" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7. 市场经营指导"
+                android:textColor="@color/text_title_color"
+                android:textSize="@dimen/textSize_16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="业务开展中给予对应的市场经营指导"
+                android:textColor="@color/color_666"
+                android:textSize="@dimen/textSize_13" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

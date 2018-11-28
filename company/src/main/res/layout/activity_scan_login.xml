@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.horen.base.widget.HRToolbar
+        android:id="@+id/custom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bg_color="@color/white"
+        app:is_white="true"
+        app:title="扫码登录" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="@dimen/margin_30"
+            android:padding="@dimen/margin_30"
+            android:src="@drawable/icon_scan_login" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20"
+            android:text="箱箱共用登录确认"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/textSize_13" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="请不要扫描来源不明的二维码"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/font_normal2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <com.horen.base.widget.RippleButton
+            android:id="@+id/bt_login_commit"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_gravity="center_horizontal"
+            android:enabled="false"
+            app:gray_text=""
+            app:green_text="确认登录"
+            app:loading_text="请稍后..." />
+
+        <com.allen.library.SuperButton
+            android:id="@+id/bt_login_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="@dimen/margin_5"
+            android:onClick="onClick"
+            android:text="取消"
+            android:textSize="@dimen/textSize_15"
+            app:sCornersRadius="@dimen/margin_5"
+            app:sSolidColor="@color/bg" />
+    </LinearLayout>
+</LinearLayout>

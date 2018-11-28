@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--服务单号-->
+    <LinearLayout
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/service_order_number"
+            android:textColor="@color/color_999"
+            android:textSize="@dimen/textSize_15" />
+
+        <TextView
+            android:id="@+id/tv_order_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IF1040"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/service_tv_13" />
+    </LinearLayout>
+
+    <!--箱号-->
+    <LinearLayout
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/service_box_number"
+            android:textColor="@color/color_999"
+            android:textSize="@dimen/textSize_15" />
+
+        <TextView
+            android:id="@+id/tv_box_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="016000284 1749879"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/service_tv_13" />
+    </LinearLayout>
+
+    <!--箱号-->
+    <LinearLayout
+        android:id="@+id/ll_responsible_party"
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/service_responsible_party"
+            android:textColor="@color/color_999"
+            android:textSize="@dimen/textSize_15" />
+
+        <TextView
+            android:id="@+id/tv_responsible_party"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上海红闰有限公司"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/service_tv_13" />
+    </LinearLayout>
+
+    <!--报备日期-->
+    <LinearLayout
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/service_report_date"
+            android:textColor="@color/color_999"
+            android:textSize="@dimen/textSize_15" />
+
+        <TextView
+            android:id="@+id/tv_report_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018-08-09"
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/service_tv_13" />
+    </LinearLayout>
+</LinearLayout>

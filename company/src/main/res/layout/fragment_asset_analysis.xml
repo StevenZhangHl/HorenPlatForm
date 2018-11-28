@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:srlEnableLoadMore="false">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_top_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/service_tv13_color_333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:text="资产总数" />
+
+                <com.horen.base.widget.NumberAnimTextView
+                    android:id="@+id/tv_asset_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:textColor="@color/base_text_color_light"
+                    android:textSize="36sp"
+                    tools:text="78,689,050" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/margin_20"
+                    android:paddingRight="@dimen/margin_20">
+
+                    <TextView
+                        android:id="@+id/tv_empty_count"
+                        style="@style/service_tv13_color_666"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="空箱数: 90709" />
+
+
+                    <TextView
+                        android:id="@+id/tv_full_count"
+                        style="@style/service_tv13_color_666"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="满箱数: 90709" />
+
+
+                    <TextView
+                        android:id="@+id/tv_transit_count"
+                        style="@style/service_tv13_color_666"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="在途数: 90709" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginRight="25dp"
+                    android:background="@color/base_text_color_light" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:paddingLeft="@dimen/margin_20"
+                    android:paddingRight="@dimen/margin_20"
+                    tools:itemCount="2"
+                    tools:listitem="@layout/item_map_org_detail" />
+
+                <TextView
+                    android:id="@+id/tv_expendle"
+                    style="@style/service_tv12_color_666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="37dp"
+                    android:drawableRight="@drawable/icon_eye_down_arrow_gray"
+                    android:drawablePadding="6dp"
+                    android:gravity="center"
+                    android:text="展开" />
+
+                <View style="@style/service_diver_10" />
+
+                <com.flyco.tablayout.SlidingTabLayout
+                    android:id="@+id/tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/white"
+                    app:tl_iconVisible="false"
+                    app:tl_indicator_color="@color/base_text_color_light"
+                    app:tl_indicator_height="1dp"
+                    app:tl_tab_space_equal="true"
+                    app:tl_textSelectColor="@color/base_text_color_light"
+                    app:tl_textUnselectColor="@color/color_666"
+                    app:tl_textsize="@dimen/textSize_13" />
+
+                <View style="@style/service_diver_f1" />
+            </LinearLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="250dp" />
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>

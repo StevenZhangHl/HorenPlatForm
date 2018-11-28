@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.horen.base.widget.HRToolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:bg_color="@color/white"
+        app:is_white="true"
+        app:title="@string/service_repair_deal_with" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="45dp"
+        android:layout_marginTop="@dimen/service_dp_50"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@drawable/service_shape_orange_bg" />
+            <!--维修信息-->
+            <!--服务单号-->
+            <LinearLayout
+                style="@style/service_paddingLeftRight_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/service_order_number"
+                    android:textColor="@color/color_999"
+                    android:textSize="@dimen/textSize_15" />
+
+                <TextView
+                    android:id="@+id/tv_order_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IF1040"
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/service_tv_13" />
+            </LinearLayout>
+
+            <!--箱号-->
+            <LinearLayout
+                style="@style/service_paddingLeftRight_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/service_box_number"
+                    android:textColor="@color/color_999"
+                    android:textSize="@dimen/textSize_15" />
+
+                <TextView
+                    android:id="@+id/tv_box_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="016000284 1749879"
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/service_tv_13" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/service_paddingLeftRight_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/service_name"
+                    android:textColor="@color/color_999"
+                    android:textSize="@dimen/textSize_15" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/service_tv_13" />
+            </LinearLayout>
+
+            <!--箱号-->
+            <LinearLayout
+                style="@style/service_paddingLeftRight_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/service_responsible_party"
+                    android:textColor="@color/color_999"
+                    android:textSize="@dimen/textSize_15" />
+
+                <TextView
+                    android:id="@+id/tv_responsible_party"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上海红闰有限公司"
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/service_tv_13" />
+            </LinearLayout>
+
+            <!--报备日期-->
+            <LinearLayout
+                style="@style/service_paddingLeftRight_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/service_report_date"
+                    android:textColor="@color/color_999"
+                    android:textSize="@dimen/textSize_15" />
+
+                <TextView
+                    android:id="@+id/tv_report_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2018-08-09"
+                    android:textColor="@color/color_333"
+                    android:textSize="@dimen/service_tv_13" />
+            </LinearLayout>
+
+            <View style="@style/service_diver_f1" />
+
+            <!--损坏位置-->
+            <include layout="@layout/service_include_damage_location" />
+            <!--损坏图片-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_photo"
+                style="@style/service_paddingLeftRight_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never" />
+
+            <View
+                style="@style/service_diver_10"
+                android:layout_marginTop="@dimen/margin_10" />
+            <!--维修耗材信息-->
+            <include layout="@layout/service_include_supplies" />
+
+            <View style="@style/service_diver_10" />
+            <!--推送备注-->
+            <TextView
+                android:id="@+id/tv_service_remake"
+                style="@style/service_paddingLeftRight_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:textColor="@color/color_333"
+                android:textSize="@dimen/service_tv_13"
+                android:visibility="gone"
+                tools:text="推送备注：这条备注是后台推过来的备注，所以在这里是处于不可编辑的状态" />
+
+            <include
+                layout="@layout/service_include_repair_remake"
+                android:visibility="gone" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <include layout="@layout/service_include_bottom_submit" />
+</FrameLayout>

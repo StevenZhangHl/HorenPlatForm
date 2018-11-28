@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="service_dp_50">50dp</dimen>
+    <dimen name="service_dp_55">55dp</dimen>
+    <dimen name="service_tv_12">12sp</dimen>
+    <dimen name="service_tv_18">18sp</dimen>
+    <dimen name="service_tv_13">13sp</dimen>
+    <dimen name="service_dp_4">4dp</dimen>
+    <dimen name="service_tv_16">16sp</dimen>
+    <dimen name="service_dp_2">2dp</dimen>
+    <dimen name="service_tv_10">10sp</dimen>
+</resources>

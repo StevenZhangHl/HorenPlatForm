@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/service_paddingLeftRight_15"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_10"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:gravity="center_vertical">
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/dp_10"
+            android:background="@color/base_text_color_light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:text="租赁方式"
+            android:textColor="#ff333333"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_day_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/service_tv13_color_666"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="租赁天数:" />
+
+        <TextView
+            android:id="@+id/tv_day_count"
+            style="@style/service_tv13_color_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30天" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/service_tv13_color_666"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="运输方式:" />
+
+        <TextView
+            android:id="@+id/tv_transport_mode"
+            style="@style/service_tv13_color_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="配送" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_renewal_rent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/service_tv13_color_666"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="是否续租:" />
+
+        <TextView
+            android:id="@+id/tv_renewal_rent"
+            style="@style/service_tv13_color_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_estimated_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/service_tv13_color_666"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="预计使用时间:" />
+
+        <TextView
+            android:id="@+id/tv_estimated_time"
+            style="@style/service_tv13_color_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018-10-15" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_preferential_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="end"
+        android:text="提前7天租箱享受7.5折优惠"
+        android:textColor="#F15B02"
+        android:textSize="@dimen/textSize_12"
+        android:visibility="gone" />
+</LinearLayout>

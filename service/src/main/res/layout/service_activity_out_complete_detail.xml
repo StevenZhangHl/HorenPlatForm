@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f5"
+    android:fitsSystemWindows="true"
+    android:overScrollMode="never">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+        <!--From To 地址-->
+        <include layout="@layout/service_include_order_address" />
+        <!--订单信息-->
+        <include layout="@layout/service_include_out_complete_order_info" />
+        <!--订单物品-->
+        <include layout="@layout/service_include_out_order_goods" />
+        <!--出库单号列表-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_out_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/service_item_out_complete_order" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

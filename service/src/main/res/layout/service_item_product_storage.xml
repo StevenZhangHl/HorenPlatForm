@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:layout_marginTop="@dimen/dp_10"
+    android:background="@drawable/service_shape_f1_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_marginTop="@dimen/dp_10"
+        tools:src="@drawable/service_logo" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/service_tv12_color_333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="吨立方食品级" />
+
+            <TextView
+                android:id="@+id/tv_type"
+                style="@style/service_tv12_color_333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:text="OF330" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:orientation="horizontal">
+
+            <com.horen.base.widget.HRTextView
+                android:id="@+id/tv_all"
+                style="@style/service_tv12_color_666"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                app:left_text="@string/service_inventory" />
+
+            <TextView
+                android:id="@+id/tv_available"
+                style="@style/service_tv12_color_666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="@string/service_available_number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_cleaned"
+                style="@style/service_tv12_color_666"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                tools:text="@string/service_cleaned_tip" />
+
+            <TextView
+                android:id="@+id/tv_repair"
+                style="@style/service_tv12_color_666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="@string/service_repair_tip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_5"
+        android:src="@drawable/service_ic_storage" />
+</LinearLayout>
+

@@ -1,0 +1,7 @@
+<resources>
+    <string name="user_app_name">user</string>
+    <string name="user_app_title">百网千驿</string>
+    <string name="user_entering_sales_business">业务发展商</string>
+    <string name="user_enter_service">服务商</string>
+    <string name="user_logout">退出登录</string>
+</resources>

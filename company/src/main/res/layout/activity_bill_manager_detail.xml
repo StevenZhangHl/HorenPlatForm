@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.horen.base.widget.HRTitle
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:isClose="true"
+        app:isDiver="false"
+        app:mTitle="账单详情" />
+
+    <View
+        android:id="@+id/view_diver"
+        style="@style/service_diver_f1"
+        android:visibility="gone" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nested_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/margin_15">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/margin_15">
+
+                    <TextView
+                        style="@style/service_tv14_color_333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="账单号: " />
+
+                    <TextView
+                        android:id="@+id/tv_bill_id"
+                        style="@style/service_tv14_color_333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="jkgiu85264691bu9680182" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_write_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="¥ 75,000.00"
+                    android:textColor="@color/base_text_color_light"
+                    android:textSize="22sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp">
+
+                    <TextView
+                        android:id="@+id/tv_write_tip"
+                        style="@style/service_tv12_color_666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="已核销金额" />
+
+                    <TextView
+                        android:id="@+id/tv_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@id/tv_write_tip"
+                        android:background="#ffd8f1c2"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:text="已结清"
+                        android:textColor="@color/base_text_color_light"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/dp_10">
+
+                    <TextView
+                        style="@style/service_tv13_color_666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="账单总金额:" />
+
+                    <TextView
+                        android:id="@+id/tv_all_money"
+                        style="@style/service_tv13_color_666"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:text="¥ 96,000.00" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:overScrollMode="never"
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gcssloop.widget.RCRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:round_corner="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/base_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="@string/service_cleaned_count"
+            android:textColor="@color/color_333"
+            android:textSize="18sp" />
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/et_clean_count"
+            style="@style/service_tv13_color_333"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_15"
+            android:background="@drawable/service_shape_et"
+            android:gravity="center"
+            tools:text="15" />
+
+        <View
+            style="@style/divider"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.allen.library.SuperButton
+                android:id="@+id/stb_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/service_cancel"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSize_14"
+                app:sSelectorNormalColor="@color/white"
+                app:sSelectorPressedColor="@color/white"
+                app:sUseSelector="true" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="50dp"
+                android:background="@color/divider" />
+
+            <com.allen.library.SuperButton
+                android:id="@+id/stb_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/stb_left"
+                android:layout_weight="1"
+                android:text="@string/service_determine"
+                android:textColor="@color/color_main"
+                android:textSize="@dimen/textSize_14"
+                app:sSelectorNormalColor="@color/white"
+                app:sSelectorPressedColor="@color/white"
+                app:sUseSelector="true" />
+        </LinearLayout>
+
+    </LinearLayout>
+</com.gcssloop.widget.RCRelativeLayout>

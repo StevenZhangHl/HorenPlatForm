@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_marginTop="@dimen/margin_10"
+        android:text="@string/service_required_supplies"
+        android:textColor="@color/color_333"
+        android:textSize="@dimen/service_tv_16" />
+
+    <LinearLayout
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/service_tv13_color_666"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/service_serial"
+            android:textSize="@dimen/service_tv_13" />
+
+        <TextView
+            style="@style/service_tv13_color_666"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="@string/service_name_consumables"
+            android:textSize="@dimen/service_tv_13" />
+
+        <TextView
+            style="@style/service_tv13_color_666"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/service_model"
+            android:textSize="@dimen/service_tv_13" />
+
+        <TextView
+            style="@style/service_tv13_color_666"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/service_consumable_quantity"
+            android:textSize="@dimen/service_tv_13" />
+
+        <TextView
+            style="@style/service_tv13_color_666"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/service_inventory"
+            android:textSize="@dimen/service_tv_13" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_supplies"
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10"
+        tools:listitem="@layout/service_item_reapir_info_supplies" />
+</LinearLayout>

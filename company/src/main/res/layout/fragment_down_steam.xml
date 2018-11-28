@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.allen.library.SuperButton
+            android:id="@+id/sbt_box_number"
+            android:layout_width="116dp"
+            android:layout_height="30dp"
+            android:text="使用箱数"
+            android:textColor="@color/base_text_color_light"
+            android:textSize="@dimen/textSize_14"
+            app:sCornersRadius="2dp"
+            app:sSolidColor="@color/white"
+            app:sStrokeColor="@color/base_text_color_light"
+            app:sStrokeWidth="1dp" />
+
+        <com.allen.library.SuperButton
+            android:id="@+id/sbt_breakage_rate"
+            android:layout_width="116dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:text="破损率排名"
+            android:textColor="@color/color_999"
+            android:textSize="@dimen/textSize_14"
+            app:sCornersRadius="2dp"
+            app:sSolidColor="@color/white"
+            app:sStrokeColor="@color/DCDCDC"
+            app:sStrokeWidth="1dp" />
+    </LinearLayout>
+
+    <View style="@style/service_diver_f1" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

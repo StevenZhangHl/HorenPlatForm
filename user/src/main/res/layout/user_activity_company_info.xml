@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f5"
+    android:orientation="vertical">
+
+    <com.horen.base.widget.HRTitle
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:isClose="true"
+        app:mTitle="所属企业" />
+
+
+    <LinearLayout
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/service_tv15_color_333"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="企业全称" />
+
+        <TextView
+            android:id="@+id/tv_company_name"
+            style="@style/service_tv13_color_333"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|end"
+            tools:text="上海鸿硏物流科技有限公司" />
+    </LinearLayout>
+
+    <View style="@style/service_diver_f1_margin_15" />
+
+    <LinearLayout
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/service_tv15_color_333"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="企业地址" />
+
+        <TextView
+            android:id="@+id/tv_company_address"
+            style="@style/service_tv13_color_333"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|end"
+            tools:text="河南南阳市卧龙区八一路272号" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/service_tv15_color_333"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="联系人" />
+
+        <TextView
+            android:id="@+id/tv_company_contact"
+            style="@style/service_tv13_color_333"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|end"
+            tools:text="何强" />
+    </LinearLayout>
+
+    <View style="@style/service_diver_f1_margin_15" />
+
+    <LinearLayout
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/service_tv15_color_333"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="联系电话" />
+
+        <TextView
+            android:id="@+id/tv_company_mobile"
+            style="@style/service_tv13_color_333"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|end"
+            tools:text="19252926954" />
+    </LinearLayout>
+
+    <View style="@style/service_diver_f1_margin_15" />
+
+    <LinearLayout
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/service_tv15_color_333"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="联系邮箱" />
+
+        <TextView
+            android:id="@+id/tv_company_mail"
+            style="@style/service_tv13_color_333"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|end"
+            tools:text="yujiang​@kitchenPro.com" />
+    </LinearLayout>
+
+</LinearLayout>

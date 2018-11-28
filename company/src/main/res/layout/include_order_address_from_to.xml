@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="25dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20"
+            android:src="@drawable/icon_address_from" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_from_name"
+                    style="@style/service_tv15_color_333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="易霞" />
+
+                <TextView
+                    android:id="@+id/tv_from_phone"
+                    style="@style/service_tv12_color_999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:text="188 1751 9956" />
+
+                <TextView
+                    android:id="@+id/tv_org_type"
+                    style="@style/service_tv13_color_333"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="租箱网点" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_from_org_address"
+                style="@style/service_tv13_color_333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="上海闵行东川路网点  中国上海市闵行区" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/service_diver_f1_margin_15" />
+
+
+    <LinearLayout
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="25dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20"
+            android:src="@drawable/icon_address_to" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_to_name"
+                    style="@style/service_tv15_color_333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="范明" />
+
+                <TextView
+                    android:id="@+id/tv_to_phone"
+                    style="@style/service_tv12_color_999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:text="188 2915 7564" />
+
+                <TextView
+                    style="@style/service_tv13_color_333"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="百网千驿" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_to_org_address"
+                style="@style/service_tv13_color_333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="嘉兴仓储中心  中国福建省厦门市莲花五村龙昌里344号" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.horen.partner">
+
+    <application>
+        <activity android:name=".ui.activity.BusinessMainActivity" />
+        <activity
+            android:name=".ui.activity.customer.AddPotentialCustomerActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name=".ui.activity.PlusImageActivity" />
+        <activity android:name=".ui.activity.customer.CustomerDetailActivity" />
+        <activity
+            android:name=".ui.activity.customer.AddVisiteActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name=".ui.activity.PlatformWebViewActivity" />
+        <activity android:name=".ui.activity.PartnerActivity" />
+        <activity android:name=".ui.activity.PartnerWebViewActivity" />
+        <activity android:name=".ui.activity.bill.BillDetailActivity" />
+        <activity android:name=".ui.activity.user.WalletActivity" />
+        <activity android:name=".ui.activity.bill.AwardsDetailActivity" />
+        <activity android:name=".ui.activity.user.CashApplyActivity" />
+        <activity android:name=".ui.activity.user.WalletBillDetailActivity" />
+    </application>
+
+</manifest>

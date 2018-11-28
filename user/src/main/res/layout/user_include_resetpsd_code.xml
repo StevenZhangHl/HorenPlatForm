@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_resetpsd_code"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f5"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:visibility="gone"
+    tools:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10"
+        android:paddingTop="@dimen/margin_30">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我们已发送"
+            android:textColor="@color/color_666"
+            android:textSize="@dimen/textSize_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  验证码  "
+            android:textColor="@color/color_333"
+            android:textSize="@dimen/textSize_16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="短信到您的手机"
+            android:textColor="@color/color_666"
+            android:textSize="@dimen/textSize_16" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_resetpsd_phone_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingBottom="@dimen/margin_30"
+        android:textColor="@color/color_333"
+        android:textSize="@dimen/textSize_16"
+        android:textStyle="bold"
+        tools:text="18370622030" />
+
+    <com.horen.base.widget.PinEntryEditText
+        android:id="@+id/txt_pin_entry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_30"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:inputType="number"
+        android:text=""
+        android:textColor="@color/color_main_color"
+        android:textSize="20sp"
+        app:bottomLineHeight="2dp"
+        app:bottomLineNormalColor="@color/line_bg"
+        app:bottomLineSelectedColor="@color/color_main_color"
+        app:figures="6"
+        app:verCodeMargin="10dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_resetpsd_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="接收短信大约需要"
+                android:textColor="@color/color_666" />
+
+            <TextView
+                android:id="@+id/tv_resetpsd_resend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/color_main_color" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_resetpsd_error"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_f5"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#FFFF0000"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_f5"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_10">
+
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            tools:src="@drawable/service_logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_goods_type"
+                style="@style/service_tv12_color_333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="吨立方食品级 OF330" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_15"
+                android:gravity="top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_demand"
+                    style="@style/service_tv12_color_666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="@string/service_demand" />
+
+                <TextView
+                    android:id="@+id/tv_executed"
+                    style="@style/service_tv12_color_666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    tools:text="@string/service_executed" />
+
+                <TextView
+                    android:id="@+id/tv_not_performed"
+                    style="@style/service_tv12_color_666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    tools:text="@string/service_not_performed" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:gravity="top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_total_inventory"
+                    style="@style/service_tv12_color_666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="@string/service_total_inventory" />
+
+                <TextView
+                    android:id="@+id/tv_available"
+                    style="@style/service_tv12_color_666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    tools:text="@string/service_available" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="@string/service_outbound_quantity"
+                    android:textColor="#EB4E3D"
+                    android:textSize="@dimen/service_tv_13" />
+
+                <EditText
+                    android:id="@+id/et_outBound"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:background="@drawable/service_shape_et"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="8"
+                    android:textColor="@color/color_333"
+                    android:textSize="10sp"
+                    tools:text="900" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        style="@style/divider"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_marginRight="@dimen/margin_15"
+        android:layout_marginTop="0dp" />
+
+</FrameLayout>

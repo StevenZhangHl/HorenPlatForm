@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        style="@style/service_tv15_color_333"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:text="备注:" />
+
+    <EditText
+        android:id="@+id/et_remarks"
+        style="@style/service_tv13_color_333"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="15dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:hint="请输入备注，最多50字。"
+        android:maxLength="50"
+        android:singleLine="true"
+        android:textColorHint="@color/DCDCDC" />
+</LinearLayout>

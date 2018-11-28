@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/service_tv13_color_666"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="业务单号" />
+
+
+        <TextView
+            android:id="@+id/tv_business_number"
+            style="@style/service_tv13_color_333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CJBSJBUHDDDDDDDDDD" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/service_tv13_color_666"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="收款单号" />
+
+
+        <TextView
+            android:id="@+id/tv_collection_number"
+            style="@style/service_tv13_color_333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KJSBUI2896RUGBT892G" />
+    </LinearLayout>
+
+    <View style="@style/service_diver_f1_margin_15" />
+
+    <LinearLayout
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_10">
+
+        <TextView
+            style="@style/service_tv13_color_666"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="租金" />
+
+        <TextView
+            android:id="@+id/tv_rent_money"
+            style="@style/service_tv13_color_333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥ 250.00 " />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_10">
+
+        <TextView
+            style="@style/service_tv13_color_666"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="耗材费" />
+
+        <TextView
+            android:id="@+id/tv_supplies_money"
+            style="@style/service_tv13_color_333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥ 250.00 " />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_10">
+
+        <TextView
+            style="@style/service_tv13_color_666"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="运费" />
+
+        <TextView
+            android:id="@+id/tv_freight_money"
+            style="@style/service_tv13_color_333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥ 250.00 " />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_10">
+
+        <TextView
+            style="@style/service_tv13_color_666"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="押金" />
+
+        <TextView
+            android:id="@+id/tv_deposit"
+            style="@style/service_tv13_color_333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥ 250.00 " />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_10">
+
+        <TextView
+            style="@style/service_tv13_color_666"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="优惠费用" />
+
+        <TextView
+            android:id="@+id/tv_preferential_money"
+            style="@style/service_tv13_color_333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥ 250.00 " />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_10">
+
+        <TextView
+            style="@style/service_tv13_color_666"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="超期费" />
+
+        <TextView
+            android:id="@+id/tv_overdue_fee"
+            style="@style/service_tv13_color_333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥ 250.00 " />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_10">
+
+        <TextView
+            style="@style/service_tv13_color_666"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="维修费" />
+
+        <TextView
+            android:id="@+id/tv_repair_fee"
+            style="@style/service_tv13_color_333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥ 250.00 " />
+
+    </LinearLayout>
+
+    <View
+        style="@style/service_diver_f1_margin_15"
+        android:layout_marginTop="@dimen/dp_10" />
+
+    <LinearLayout
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_10">
+
+        <TextView
+            style="@style/service_tv13_color_333"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="总金额" />
+
+        <TextView
+            android:id="@+id/tv_all_fee"
+            style="@style/service_tv13_color_333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥ 250.00 " />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="4dp">
+
+        <TextView
+            style="@style/service_tv12_color_666"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="已收金额" />
+
+        <TextView
+            android:id="@+id/tv_received_fee"
+            style="@style/service_tv12_color_666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥ 250.00 " />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/icon_order_detail_line" />
+
+    <LinearLayout
+        style="@style/service_paddingLeftRight_15"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_actual_money_name"
+            style="@style/service_tv14_color_333"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="未收金额" />
+
+        <TextView
+            android:id="@+id/tv_outstanding_free"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥ 250.00 "
+            android:textColor="@color/base_text_color_light"
+            android:textSize="@dimen/sp_14" />
+
+    </LinearLayout>
+</LinearLayout>

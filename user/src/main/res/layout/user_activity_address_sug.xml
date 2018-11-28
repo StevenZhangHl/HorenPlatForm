@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_address_sug_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/actionBarItemBackground"
+            android:onClick="onClick"
+            android:padding="15dp"
+            android:src="@drawable/user_ic_back_black" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_weight="1"
+            android:background="@drawable/user_shape_select_bt"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.SearchView
+                android:id="@+id/et_address_sug"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="@dimen/margin_5"
+                android:focusable="true"
+                android:gravity="center"
+                android:hint=""
+                android:text=""
+                app:closeIcon="@null"
+                app:commitIcon="@null"
+                app:goIcon="@null"
+                app:queryBackground="@null"
+                app:queryHint="搜索"
+                app:searchHintIcon="@null"
+                app:searchIcon="@null"
+                app:showDividers="none" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:src="@drawable/user_icon_search" />
+
+            <ImageView
+                android:id="@+id/iv_address_sug_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/margin_10"
+                android:onClick="onClick"
+                android:src="@drawable/ic_clear"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <com.allen.library.SuperButton
+            android:id="@+id/btn_address_sug"
+            android:layout_width="45dp"
+            android:layout_height="28dp"
+            android:layout_marginRight="@dimen/margin_10"
+            android:enabled="false"
+            android:onClick="onClick"
+            android:text="搜索"
+            android:textColor="@color/color_999"
+            android:textSize="@dimen/sp_14"
+            app:sCornersRadius="@dimen/margin_5"
+            app:sSelectorDisableColor="@color/DCDCDC"
+            app:sSelectorNormalColor="@color/color_main"
+            app:sSelectorPressedColor="@color/color_main"
+            app:sUseSelector="true" />
+    </LinearLayout>
+
+    <View
+        android:background="@color/color_f5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_10"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_address_sug"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

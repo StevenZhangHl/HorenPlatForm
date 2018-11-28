@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_add_customer_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.customer.AddPotentialCustomerActivity"
+    tools:ignore="ResourceName">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/add_customer_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_f5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/margin_15"
+                    android:text="基本信息"
+                    android:textColor="@color/color_333"
+                    android:textSize="17sp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_industry"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_marginTop="11dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/tv_customer_inductry_txt"
+                        style="@style/textview_title"
+                        android:text="行业" />
+
+                    <EditText
+                        android:id="@+id/tv_industry"
+                        style="@style/edit_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_customer_inductry_txt"
+                        android:focusable="false"
+                        android:focusableInTouchMode="true"
+                        android:hint="请选择行业类别" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_5"
+                        android:padding="@dimen/dp_10"
+                        android:src="@mipmap/icon_arrow_down" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_company_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_40"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/textview_title"
+                            android:text="公司名称" />
+
+                        <com.horen.base.widget.PWEditText
+                            android:id="@+id/et_company_name"
+                            style="@style/edit_textview"
+                            android:hint="请输入公司名称" />
+                    </LinearLayout>
+
+                    <include layout="@layout/include_view_line_marginleft"></include>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp">
+
+                        <TextView
+                            android:id="@+id/tv_customer_city_txt"
+                            style="@style/textview_title"
+                            android:text="地区" />
+
+                        <EditText
+                            android:id="@+id/tv_city"
+                            style="@style/edit_textview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/iv_city_arrow"
+                            android:layout_toRightOf="@+id/tv_customer_city_txt"
+                            android:focusable="false"
+                            android:hint="请选择地区" />
+
+                        <ImageView
+                            android:id="@+id/iv_city_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/margin_5"
+                            android:padding="@dimen/dp_10"
+                            android:src="@mipmap/icon_arrow_right" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/include_view_line_marginleft"></include>
+
+                    <EditText
+                        android:id="@+id/et_company_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@null"
+                        android:gravity="top|left"
+                        android:hint="请填写详细地址，详细到门牌号"
+                        android:maxLength="80"
+                        android:paddingLeft="@dimen/margin_15"
+                        android:paddingTop="@dimen/margin_10"
+                        android:textColor="@color/color_333"
+                        android:textSize="@dimen/textSize_13" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_40"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/textview_title"
+                            android:text="联系人" />
+
+                        <com.horen.base.widget.PWEditText
+                            android:id="@+id/et_contact"
+                            style="@style/edit_textview"
+                            android:hint="请输入联系人姓名" />
+                    </LinearLayout>
+
+                    <include layout="@layout/include_view_line_marginleft"></include>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_40"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/textview_title"
+                            android:text="联系邮箱" />
+
+                        <com.horen.base.widget.PWEditText
+                            android:id="@+id/et_email"
+                            style="@style/edit_textview"
+                            android:hint="请输入电子邮箱" />
+                    </LinearLayout>
+
+                    <include layout="@layout/include_view_line_marginleft"></include>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_40"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/textview_title"
+                            android:text="手机号码" />
+
+                        <com.horen.base.widget.PWEditText
+                            android:id="@+id/et_phone"
+                            style="@style/edit_textview"
+                            android:hint="请输入手机号码"
+                            android:inputType="phone"
+                            android:maxLength="11" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_needs_info_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/margin_15"
+                    android:text="需求信息"
+                    android:textColor="@color/color_333"
+                    android:textSize="17sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/et_needs"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:background="@null"
+                        android:gravity="top|left"
+                        android:hint="请输入需求信息"
+                        android:maxLength="50"
+                        android:paddingLeft="@dimen/margin_15"
+                        android:textColor="@color/color_333"
+                        android:textColorHint="@color/DCDCDC"
+                        android:textSize="@dimen/textSize_13" />
+
+                    <TextView
+                        android:id="@+id/tv_str_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/margin_15"
+                        android:background="@color/white"
+                        android:gravity="right"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <com.horen.base.widget.MyGridView
+                    android:id="@+id/photo_recycleview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:numColumns="4"
+                    android:paddingBottom="@dimen/margin_10"
+                    android:paddingLeft="@dimen/margin_15"
+                    android:paddingRight="@dimen/margin_15"
+                    android:paddingTop="@dimen/margin_10"></com.horen.base.widget.MyGridView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="@dimen/margin_10"
+                        android:text="@string/save_tip"
+                        android:textColor="@color/color_333"
+                        android:textSize="@dimen/textSize_13" />
+
+                    <com.horen.base.widget.RippleButton
+                        android:id="@+id/bt_subimit_needs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_20"
+                        android:layout_marginLeft="@dimen/margin_20"
+                        android:layout_marginRight="@dimen/margin_20"
+                        android:enabled="false"
+                        android:textSize="16sp"
+                        app:gray_text="@string/save"
+                        app:green_text="@string/save"
+                        app:loading_text="保存中"></com.horen.base.widget.RippleButton>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
